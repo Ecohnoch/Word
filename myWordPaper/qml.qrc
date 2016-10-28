@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>WordView.qml</file>
+        <file>WordLabel.qml</file>
+        <file>wordData.json</file>
+        <file>WordGo.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,115 @@
+{
+    "1":{
+        "eng": "1:  exclusive",
+        "la" : "专用的",
+        "lb" : "专有的",
+        "lc" : "专家的",
+        "ld" : "专长的",
+        "ans": "a"
+    },
+    "2":{
+        "eng": "2:  hover",
+        "la" : "停下",
+        "lb" : "悬吊",
+        "lc" : "敬仰",
+        "ld" : "洞穴",
+        "ans": "b"
+    },
+    "3":{
+        "eng": "3:  hurricane",
+        "la" : "飓风",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans": "a"
+    },
+    "4":{
+        "eng": "4:  fantastic",
+        "la" : "极好的",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "5":{
+        "eng": "5:  solemn",
+        "la" : "严肃的，庄严的，隆重的",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "6":{
+        "eng": "6:  bourgeois",
+        "la" : "中产阶级",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "7":{
+        "eng": "7:  drain",
+        "la" : "排水，耗尽",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "8":{
+        "eng": "8:  passive",
+        "la" : "消极",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "9":{
+        "eng": "9:  achievement",
+        "la" : "成就",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "10":{
+        "eng": "10:  thrill",
+        "la" : "兴奋",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "11":{
+        "eng": "11:  pave",
+        "la" : "铺路",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "12":{
+        "eng": "12:  cyber",
+        "la" : "电脑，网络的",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "13":{
+        "eng": "13:  annual",
+        "la" : "一年一度的",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ld" : "xx",
+        "ans" : "a"
+    },
+    "14":{
+        "eng": "14:  needed",
+        "la" : "xx",
+        "lb" : "xx",
+        "lc" : "xx",
+        "ans": "a"
+    }
+
+
+}

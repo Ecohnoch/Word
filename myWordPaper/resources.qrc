@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>font/Hiragino Sans GB W3.otf</file>
+        <file>font/liberationmono.ttf</file>
+        <file>font/PingFangM.ttf</file>
+        <file>font/STKaiTi.ttf</file>
+        <file>ui/bg.jpg</file>
+        <file>ui/left174.png</file>
+        <file>ui/right168.png</file>
+        <file>ui/check50.png</file>
+        <file>ui/check_mark.png</file>
+    </qresource>
+</RCC>
