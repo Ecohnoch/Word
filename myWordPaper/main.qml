@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Window 2.2
 import File 1.0
 
-Window {
+ApplicationWindow {
     id: mainWindow
     visible: true
     width: 320
@@ -13,6 +13,8 @@ Window {
     color: systemPalette.window
     property int textNum: 1
     property bool clear: false
+
+
     FontLoader{id: uiFont; source: "font/liberationmono.ttf"}
     SystemPalette{id: systemPalette}
     Image{
@@ -52,5 +54,40 @@ Window {
         anchors.fill: parent
     }
 
+    menuBar: MenuBar{
+        Menu{
+            title: "Add"
+            MenuItem{text: "Add single word"; onTriggered: {addWindow.show()}}
+        }
+    }
 
+    Window{
+        id: addWindow
+        width: 300; height: 350
+        color: systemPalette.window
+        property var addTable: ["", "", "", "", "", ""]
+        Column{
+            x: 0; y: 0
+            width: 300; height: 270
+            spacing: 20
+            WordAddItem{text: "word:"}
+            WordAddItem{text: "answer A"}
+            WordAddItem{text: "answer B"}
+            WordAddItem{text: "answer C"}
+            WordAddItem{text: "answer D"}
+            WordAddItem{text: "correct Answer"}
+        }
+        Button{
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            width: 50; height: 50
+            text: "Sure"
+            onClicked: {
+                console.log(addWindow.addTable)
+                var data = "{}"
+                console.log(File.write(":/wordData2.txt", data))
+            }
+        }
+
+    }
 }

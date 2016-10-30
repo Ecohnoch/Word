@@ -4,6 +4,13 @@ import File 1.0
 Item {
     //property var data: JSON.parse(File.read(":/wordData.json"))
     id: go
+    Component.onCompleted: {
+        File.write(":/wordData.json", "{\"2\":{\"eng\": \"2:  hover\",\"la\" : \"停下\",\"lb\" : \"悬吊\",\"lc\" : \"敬仰\",\"ld\" : \"洞穴\", \"ans\": \"b\"}}")
+        console.log("write")
+        var ss = File.read(":/wordData.json")
+        console.log(ss)
+    }
+
     WordView{
         id: view
         anchors.top: parent.top

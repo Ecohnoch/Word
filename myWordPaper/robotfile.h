@@ -1,6 +1,7 @@
 #ifndef ROBOTFILE_H
 #define ROBOTFILE_H
 
+#include <QDebug>
 #include <QObject>
 #include <QtCore>
 
@@ -58,6 +59,17 @@ public:
         return QString(byteArray);  // maybe empty
     }
 
+    Q_INVOKABLE bool write(QString path, QString data){
+        QFile f(path);
+        if(!f.open(QIODevice::WriteOnly)) return false;
+        if(f.write(data.toUtf8())==-1){     // writing failed
+            f.close();
+            return false;
+        }else{
+            f.close();
+            return true;
+        }
+    }
     // ------------------- C++ Func ---------------------------
 
     // ------------------- Private Func ---------------------------

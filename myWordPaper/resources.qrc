@@ -9,5 +9,6 @@
         <file>ui/right168.png</file>
         <file>ui/check50.png</file>
         <file>ui/check_mark.png</file>
+        <file>music/yonghengdeyishun.mp3</file>
     </qresource>
 </RCC>
