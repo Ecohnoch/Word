@@ -18,7 +18,7 @@ Item {
     TextField{
         id: field
         width: 100
-        x: label.x + label.width + 20
+        x: label.x + label.width + 30
         onTextChanged: {
             if(addItem.text == "word:"){
                 addWindow.addTable[0] = field.text

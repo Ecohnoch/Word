@@ -70,6 +70,11 @@ public:
             return true;
         }
     }
+    Q_INVOKABLE bool remove(QString path){
+        QFile f(path);
+        return f.remove();
+    }
+
     // ------------------- C++ Func ---------------------------
 
     // ------------------- Private Func ---------------------------

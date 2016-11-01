@@ -69,7 +69,11 @@ Item {
         source: "ui/right168.png"
         MouseArea{
             anchors.fill: parent
-            onClicked: nextClicked()
+            onClicked: {
+                if(textNum == num - 1){
+                    return
+                }else nextClicked()
+            }
             cursorShape: Qt.PointingHandCursor
         }
     }
@@ -84,7 +88,11 @@ Item {
         source: "ui/left174.png"
         MouseArea{
             anchors.fill: parent
-            onClicked: preClicked()
+            onClicked: {
+                if(textNum == 1){
+                    return
+                }else preClicked()
+            }
             cursorShape: Qt.PointingHandCursor
         }
     }
@@ -102,11 +110,17 @@ Item {
     }
 
     function nextClicked(){
-        var data = JSON.parse(File.read(":/wordData.json"))
+        var data
+        if(File.exist(File.dataPath('data.json'))){
+            data = JSON.parse(File.read(File.dataPath('data.json')))
+        }else{
+            data = JSON.parse(File.read(":/wordData.json"))
+        }
         textNum ++
         if(!data || !data[textNum]){
+            console.log("***Json read Error!", textNum, num)
             textNum = 1
-            console.log("***Json read Error!")
+
             return
         }
         clear = true
@@ -128,7 +142,12 @@ Item {
     }
 
     function preClicked(){
-        var data = JSON.parse(File.read(":/wordData.json"))
+        var data
+        if(File.exist(File.dataPath('data.json'))){
+            data = JSON.parse(File.read(File.dataPath('data.json')))
+        }else{
+            data = JSON.parse(File.read(":/wordData.json"))
+        }
         textNum --
         if(!data || !data[textNum]){
             console.log("***Json read Error!")
@@ -149,7 +168,12 @@ Item {
     }
 
     function checkClicked(){
-        var data = JSON.parse(File.read(":/wordData.json"))
+        var data
+        if(File.exist(File.dataPath('data.json'))){
+            data = JSON.parse(File.read(File.dataPath('data.json')))
+        }else{
+            data = JSON.parse(File.read(":/wordData.json"))
+        }
         if(!data[textNum] || !data){
             console.log("***Error to get the ans, maybe check the json")
             return

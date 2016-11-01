@@ -6,5 +6,6 @@
         <file>wordData.json</file>
         <file>WordGo.qml</file>
         <file>WordAddItem.qml</file>
+        <file>FileSelector.qml</file>
     </qresource>
 </RCC>
